@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A94525525B817B900B77F29 /* VideoPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A94525425B817B900B77F29 /* VideoPreviewVC.swift */; };
+		3AA227CF259F7BB1003B418A /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA227CE259F7BB1003B418A /* CameraController.swift */; };
 		3ABBBC9A259A5C0800F45D8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBBC99259A5C0800F45D8F /* AppDelegate.swift */; };
 		3ABBBC9C259A5C0800F45D8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBBC9B259A5C0800F45D8F /* SceneDelegate.swift */; };
-		3ABBBC9E259A5C0800F45D8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBBC9D259A5C0800F45D8F /* ViewController.swift */; };
-		3ABBBCA1259A5C0800F45D8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ABBBC9F259A5C0800F45D8F /* Main.storyboard */; };
+		3ABBBC9E259A5C0800F45D8F /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBBC9D259A5C0800F45D8F /* CameraVC.swift */; };
 		3ABBBCA3259A5C0C00F45D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ABBBCA2259A5C0C00F45D8F /* Assets.xcassets */; };
 		3ABBBCA6259A5C0C00F45D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ABBBCA4259A5C0C00F45D8F /* LaunchScreen.storyboard */; };
+		3ABBBCB8259B988900F45D8F /* SSCaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBBCB7259B988900F45D8F /* SSCaptureButton.swift */; };
+		3ABBBCBB259BB55600F45D8F /* SSSaveHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBBCBA259BB55600F45D8F /* SSSaveHeader.swift */; };
+		3ABBBCBE259BBA4600F45D8F /* PhotoPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABBBCBD259BBA4600F45D8F /* PhotoPreviewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A94525425B817B900B77F29 /* VideoPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewVC.swift; sourceTree = "<group>"; };
+		3AA227CE259F7BB1003B418A /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		3ABBBC96259A5C0800F45D8F /* SimpleShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABBBC99259A5C0800F45D8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ABBBC9B259A5C0800F45D8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3ABBBC9D259A5C0800F45D8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3ABBBCA0259A5C0800F45D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3ABBBC9D259A5C0800F45D8F /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		3ABBBCA2259A5C0C00F45D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ABBBCA5259A5C0C00F45D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3ABBBCA7259A5C0C00F45D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ABBBCB7259B988900F45D8F /* SSCaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSCaptureButton.swift; sourceTree = "<group>"; };
+		3ABBBCBA259BB55600F45D8F /* SSSaveHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSSaveHeader.swift; sourceTree = "<group>"; };
+		3ABBBCBD259BBA4600F45D8F /* PhotoPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		3ABBBC98259A5C0800F45D8F /* SimpleShot */ = {
 			isa = PBXGroup;
 			children = (
+				3ABBBCC2259BC4A000F45D8F /* App */,
+				3ABBBCC3259BC4B900F45D8F /* Features */,
+				3ABBBCC0259BC3F100F45D8F /* CustomViews */,
+			);
+			path = SimpleShot;
+			sourceTree = "<group>";
+		};
+		3ABBBCC0259BC3F100F45D8F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3ABBBCB7259B988900F45D8F /* SSCaptureButton.swift */,
+				3ABBBCBA259BB55600F45D8F /* SSSaveHeader.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		3ABBBCC2259BC4A000F45D8F /* App */ = {
+			isa = PBXGroup;
+			children = (
 				3ABBBC99259A5C0800F45D8F /* AppDelegate.swift */,
 				3ABBBC9B259A5C0800F45D8F /* SceneDelegate.swift */,
-				3ABBBC9D259A5C0800F45D8F /* ViewController.swift */,
-				3ABBBC9F259A5C0800F45D8F /* Main.storyboard */,
 				3ABBBCA2259A5C0C00F45D8F /* Assets.xcassets */,
 				3ABBBCA4259A5C0C00F45D8F /* LaunchScreen.storyboard */,
 				3ABBBCA7259A5C0C00F45D8F /* Info.plist */,
 			);
-			path = SimpleShot;
+			path = App;
+			sourceTree = "<group>";
+		};
+		3ABBBCC3259BC4B900F45D8F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3ADDE3E325BACC67007E8488 /* Camera */,
+				3ADDE3E525BACCF6007E8488 /* PhotoPreview */,
+				3ADDE3E625BACD17007E8488 /* VideoPreview */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3ADDE3E325BACC67007E8488 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				3ABBBC9D259A5C0800F45D8F /* CameraVC.swift */,
+				3AA227CE259F7BB1003B418A /* CameraController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		3ADDE3E525BACCF6007E8488 /* PhotoPreview */ = {
+			isa = PBXGroup;
+			children = (
+				3ABBBCBD259BBA4600F45D8F /* PhotoPreviewVC.swift */,
+			);
+			path = PhotoPreview;
+			sourceTree = "<group>";
+		};
+		3ADDE3E625BACD17007E8488 /* VideoPreview */ = {
+			isa = PBXGroup;
+			children = (
+				3A94525425B817B900B77F29 /* VideoPreviewVC.swift */,
+			);
+			path = VideoPreview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +186,6 @@
 			files = (
 				3ABBBCA6259A5C0C00F45D8F /* LaunchScreen.storyboard in Resources */,
 				3ABBBCA3259A5C0C00F45D8F /* Assets.xcassets in Resources */,
-				3ABBBCA1259A5C0800F45D8F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +196,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ABBBC9E259A5C0800F45D8F /* ViewController.swift in Sources */,
+				3A94525525B817B900B77F29 /* VideoPreviewVC.swift in Sources */,
+				3ABBBC9E259A5C0800F45D8F /* CameraVC.swift in Sources */,
 				3ABBBC9A259A5C0800F45D8F /* AppDelegate.swift in Sources */,
+				3AA227CF259F7BB1003B418A /* CameraController.swift in Sources */,
+				3ABBBCBB259BB55600F45D8F /* SSSaveHeader.swift in Sources */,
+				3ABBBCB8259B988900F45D8F /* SSCaptureButton.swift in Sources */,
 				3ABBBC9C259A5C0800F45D8F /* SceneDelegate.swift in Sources */,
+				3ABBBCBE259BBA4600F45D8F /* PhotoPreviewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3ABBBC9F259A5C0800F45D8F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3ABBBCA0259A5C0800F45D8F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3ABBBCA4259A5C0C00F45D8F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +344,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GV72V389X;
-				INFOPLIST_FILE = SimpleShot/Info.plist;
+				INFOPLIST_FILE = SimpleShot/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noartcode.SimpleShot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +364,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GV72V389X;
-				INFOPLIST_FILE = SimpleShot/Info.plist;
+				INFOPLIST_FILE = SimpleShot/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noartcode.SimpleShot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
